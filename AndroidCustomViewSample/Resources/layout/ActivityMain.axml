@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AndroidCustomViewSample.AnchorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!-- コメントはLtR前提 -->
+	<!-- 左上の角に配置 -->
+	<TextView 
+		android:id="@+id/TopStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|start"
+		android:text="topStart"/>
+
+	<!-- 左上の角のViewの右下の角を起点(targetAnchor)とする -->
+	<!-- 起点の右下に配置 -->
+	<TextView
+		android:id="@+id/BottomEndOfTopStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:text="bottomEndOfTopStart"
+		app:layout_targetAnchorGravity="bottom|end"
+		app:layout_targetAnchor="@id/TopStart"/>
+
+	<!-- 右上の角に配置 -->
+	<TextView 
+		android:id="@+id/TopEnd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|end"
+		android:text="topEnd"/>
+
+	<!-- 右上の角のViewの左下を起点(targetAnchor)とする -->
+	<!-- 起点の左下に配置 -->
+	<TextView
+		android:id="@+id/BottomStartOfTopEnd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|start"
+		android:text="bottomEndOfTopStart"
+		app:layout_targetAnchorGravity="bottom|start"
+		app:layout_targetAnchor="@id/TopEnd"/>
+
+	<!-- 右下の角に配置 -->
+    <TextView 
+		android:id="@+id/BottomEnd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:text="bottomEnd"/>
+
+	<!-- 右下の角のViewの左上を起点(targetAnchor)とする -->
+	<!-- 起点の左上に配置 -->
+	<TextView
+		android:id="@+id/TopStartOfBottomEnd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|start"
+		android:text="topStartOfBottomEnd"
+		app:layout_targetAnchorGravity="top|start"
+		app:layout_targetAnchor="@id/BottomEnd"/>
+
+	<!-- 左下の角に配置 -->
+	<TextView 
+		android:id="@+id/BottomStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|start"
+		android:text="bottomStart"/>
+
+	<!-- 左下の角のViewの右上を起点(targetAnchor)とする -->
+	<!-- 起点の右上に配置 -->
+	<TextView
+		android:id="@+id/TopEndOfBottomStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|end"
+		android:text="topStartOfBottomEnd"
+		app:layout_targetAnchorGravity="top|end"
+		app:layout_targetAnchor="@id/BottomStart"/>
+
+	<!-- 中央に配置 -->
+	<TextView 
+		android:id="@+id/Center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="center"/>
+
+	<!-- 中央のViewの左中央を起点(targetAnchor)とする -->
+	<!-- 起点が中央になるように配置 -->
+	<View
+		android:id="@+id/StartOfCenter"
+		android:layout_width="6dp"
+		android:layout_height="6dp"
+		android:layout_gravity="center"
+		android:background="#00FF00"
+		app:layout_targetAnchorGravity="center_vertical|start"
+		app:layout_targetAnchor="@id/Center"/>
+
+	<!-- 中央のViewの右中央を起点(targetAnchor)とする -->
+	<!-- 起点が中央になるように配置 -->
+	<View
+		android:id="@+id/EndOfCenter"
+		android:layout_width="6dp"
+		android:layout_height="6dp"
+		android:layout_gravity="center"
+		android:background="#0000FF"
+		app:layout_targetAnchorGravity="center_vertical|end"
+		app:layout_targetAnchor="@id/Center"/>
+
+</AndroidCustomViewSample.AnchorLayout>

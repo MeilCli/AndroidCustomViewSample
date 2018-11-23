@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <declare-styleable name="AnchorLayout_LayoutParams">
+        <attr name="android:layout_gravity"/>
+
+        <attr name="layout_targetAnchor" format="reference"/>
+
+        <!-- Constant value defined in https://developer.android.com/reference/android/view/Gravity -->
+        <attr name="layout_targetAnchorGravity">
+            <flag name="top" value="48"/>
+            <flag name="bottom" value="80"/>
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+            <flag name="start" value="8388611"/>
+            <flag name="end" value="8388613"/>
+            <flag name="center" value="17"/>
+            <flag name="center_horizontal" value="1"/>
+            <flag name="center_vertical" value="16"/>
+        </attr>
+    </declare-styleable>
+</resources>

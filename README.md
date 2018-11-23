@@ -1,0 +1,4 @@
+# AndroidCustomViewSample
+
+サンプルということでCoordinatorLayoutのanchorの機能を実装してみました。  
+細かいところは作りこまれてないです。
